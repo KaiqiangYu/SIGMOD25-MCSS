@@ -479,7 +479,7 @@ void solve(const Graph & g0, const Graph & g1, vector<VtxPair> & incumbent,
     }
     
     bd.right_len++;
-    if (bd.left_len == 0) remove_bidomain(domains, bd_idx);
+    //if (bd.left_len == 0) remove_bidomain(domains, bd_idx); // Fixed by Buddhi Kothalawala. Thank you, Buddhi Kothalawala, for the checking.
 
     
     
